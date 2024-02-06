@@ -5,6 +5,7 @@ import List from './components/List.jsx'
 
 const App = () => {
   const [items, setItems] = useState([])
+// /hello
   useEffect(() => {
     $.ajax({
       url: '/api/items',
@@ -17,6 +18,7 @@ const App = () => {
       },
     })
   }, [])
+
 
   return (
     <div>
